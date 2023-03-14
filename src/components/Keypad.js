@@ -3,12 +3,13 @@ import React from 'react';
 
 
 function Keypad (){
-    const handleInput = () => {
+    function handleChange() {
         console.log("Entering password...");
     }
     return (
         <div>
-            <input type="password" onChange={e => handleInput(e)} />
+            <label for="pass"></label>
+            <input name="pass" type="password" onChange={handleChange} />
         </div>
     )
 }
